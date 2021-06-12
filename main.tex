@@ -131,7 +131,12 @@ columns=fullflexible
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-Download all latex-tikz codes from 
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/CRAMYATULASI/ASSIGNMENT4/tree/main/ASSIGNMENT4/CODES
+\end{lstlisting}
+%
+and download all latex-tikz codes from 
 %
 \begin{lstlisting}
 https://github.com/Sowmyabandi99/Assignment3/blob/main/main.tex
@@ -144,19 +149,19 @@ Find the direction vectors  and y-intercepts of the following lines.
 \item
 \begin{align}
 \begin{split}
-\myvec{1 & 7}\vec{x}&=0
+\myvec{1 & 7}\vec{x}&=0  \label{eq1}
 \end{split}
 \end{align}
 \item
 \begin{align}
 \begin{split}
-\myvec{6 & 3}\vec{x}&=5
+\myvec{6 & 3}\vec{x}&=5  \label{eq2}
 \end{split}
 \end{align}
 \item
 \begin{align}
 \begin{split}
-\myvec{0 & 1}\vec{x}&=0
+\myvec{0 & 1}\vec{x}&=0  \label{eq3}
 \end{split}
 \end{align}
 %\end{multicols}
@@ -164,34 +169,70 @@ Find the direction vectors  and y-intercepts of the following lines.
 %
 \section{Solution}
 \begin{itemize}
-\item Direction vector of the line \myvec{a & b}\vec{x}&=c is 
+\item Direction vector and y-intercept of the line $\vec{n}^T\vec{x}=c$, where \vec{n}= \myvec{a \\ b} are:
+\\
+Direction vector
 \begin{align}
-M = \myvec{b \\ -a}
+\vec{m}= \myvec{b \\ -a}
 \end{align}
+and
+y-intercept = $\frac{c}{b}e_2$, where e_2=\myvec{0\\1}}
 \end{itemize}
 \begin{enumerate}
 %\begin{multicols}{2}
-\item Direction vector
+\item Normal vector
 \begin{align}
 \begin{split}
-M = \myvec{7 \\ -1}
+\vec{n} = \myvec{1 \\ 7}
 \end{split}
 \end{align}
-y-intercept = 0
-\item Direction vector
+Direction vector
+\begin{align}
+\vec{m} = \myvec{7 \\ -1}
+\end{align}
+y-intercept = \myvec{0 \\ 0}
+\item Normal vector
 \begin{align}
 \begin{split}
-M = \myvec{3 \\ -6}
+\vec{n} = \myvec{6 \\ 3}
 \end{split}
 \end{align}
-y-intercept = 5/3
-\item  Direction vector
+Direction vector
+\begin{align}
+\vec{m} = \myvec{3 \\ -6}
+\end{align}
+y-intercept = $\frac{5}{3}e_2$   
+\item Normal vector
 \begin{align}
 \begin{split}
-M = \myvec{1 \\ 0}
+\vec{n} = \myvec{0 \\ 1}
 \end{split}
 \end{align}
-y-intercept = 0
+Direction vector
+\begin{align}
+\vec{m} = \myvec{1 \\ 0}
+\end{align}
+y-intercept = \myvec{0 \\ 0}
 %\end{multicols}
+
+PLOT OF GIVEN LINES -
+\numberwithin{figure}{section}
+\begin{figure}[ht!]
+Plot of \eqref{eq1} -
+\centering
+\includegraphics[width=\columnwidth]{Fig1.png}
+\end{figure} 
+\numberwithin{figure}{section}
+\begin{figure}[ht!]
+Plot of \eqref{eq2} -
+\centering
+\includegraphics[width=\columnwidth]{Fig2.png}
+\end{figure} 
+\numberwithin{figure}{section}
+\begin{figure}[ht]
+Plot of \eqref{eq3} 
+\centering
+\includegraphics[width=\columnwidth]{Fig3.png}
+\end{figure}    
 \end{enumerate}
 \end{document}
