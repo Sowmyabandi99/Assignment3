@@ -168,8 +168,9 @@ Find the direction vectors  and y-intercepts of the following lines.
 \end{enumerate}
 %
 \section{Solution}
-\begin{itemize}
-\item Direction vector and y-intercept of the line $\vec{n}^T\vec{x}=c$, where \vec{n}= \myvec{a \\ b} are:
+\begin{lemma}
+\label{lemma}
+Direction vector and y-intercept of the line $\vec{n}^T\vec{x}=c$, where \vec{n}= \myvec{a \\ b} are:
 \\
 Direction vector
 \begin{align}
@@ -177,10 +178,14 @@ Direction vector
 \end{align}
 and
 y-intercept = $\frac{c}{b}e_2$, where e_2=\myvec{0\\1}}
-\end{itemize}
+\end{lemma}
 \begin{enumerate}
 %\begin{multicols}{2}
-\item Normal vector
+\item From the given line $\myvec{1 & 7}\vec{x}&=0$,we have
+\begin{align}
+a=1,b=7,c=0
+\end{align}
+Normal vector
 \begin{align}
 \begin{split}
 \vec{n} = \myvec{1 \\ 7}
@@ -191,7 +196,12 @@ Direction vector
 \vec{m} = \myvec{7 \\ -1}
 \end{align}
 y-intercept = \myvec{0 \\ 0}
-\item Normal vector
+\item 
+From the given line $\myvec{6 & 3}\vec{x}&=5$,we have
+\begin{align}
+a=6,b=3,c=5
+\end{align}
+Normal vector
 \begin{align}
 \begin{split}
 \vec{n} = \myvec{6 \\ 3}
@@ -202,7 +212,11 @@ Direction vector
 \vec{m} = \myvec{3 \\ -6}
 \end{align}
 y-intercept = $\frac{5}{3}e_2$   
-\item Normal vector
+\item From the given line $\myvec{0 & 1}\vec{x}&=0$,we have
+\begin{align}
+a=0,b=1,c=0
+\end{align}
+Normal vector
 \begin{align}
 \begin{split}
 \vec{n} = \myvec{0 \\ 1}
