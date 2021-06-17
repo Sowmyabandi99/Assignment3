@@ -170,7 +170,7 @@ Find the direction vectors  and y-intercepts of the following lines.
 \section{Solution}
 \begin{lemma}
 \label{lemma}
-Direction vector and y-intercept of the line $\vec{n}^T\vec{x}=c$, where \vec{n}= \myvec{a \\ b} are:
+Direction vector and y-intercept of the line $\vec{n}^T\vec{x}=c$ are:
 \\
 Direction vector
 \begin{align}
@@ -178,11 +178,11 @@ Direction vector
 \end{align}
 and
 \\
-y-intercept = $\frac{c}{\vec{n}^T e_2}$, where e_2=\myvec{0\\1}}
+y-intercept = $\frac{c}{\vec{n}^T\vec{e_2}}$ $\quad(\because \vec{e_2}=\myvec{0\\1})$
 \end{lemma}
 \begin{enumerate}
 %\begin{multicols}{2}
-\item From the given line $\myvec{1 & 7}\vec{x}&=0$,we have
+\item From the given line $\myvec{1 & 7}\vec{x}=0$,we have
 \begin{align}
 a=1,b=7,c=0
 \end{align}
@@ -197,8 +197,16 @@ Direction vector
 \vec{m} = \myvec{7 \\ -1}
 \end{align}
 y-intercept = \myvec{0 \\ 0}
-\item 
-From the given line $\myvec{6 & 3}\vec{x}&=5$,we have
+\\
+PLOT OF THE GIVEN LINE:
+\numberwithin{figure}{section}
+\begin{figure}[ht!]
+Plot of \eqref{eq1} -
+\centering
+\includegraphics[width=\columnwidth,height=5 cm]{Fig1.png}
+\caption{Figure1}
+\end{figure}
+\item From the given line $\myvec{6 & 3}\vec{x}=5$,we have
 \begin{align}
 a=6,b=3,c=5
 \end{align}
@@ -212,8 +220,17 @@ Direction vector
 \begin{align}
 \vec{m} = \myvec{3 \\ -6}
 \end{align}
-y-intercept = $\frac{5}{3}e_2$   
-\item From the given line $\myvec{0 & 1}\vec{x}&=0$,we have
+y-intercept = $\frac{5}{3}\vec{e_2}$   
+\\
+PLOT OF THE GIVEN LINE:
+\numberwithin{figure}{section}
+\begin{figure}[ht!]
+Plot of \eqref{eq2}
+\centering
+\includegraphics[width=\columnwidth,height=4 cm]{Fig2.png}
+\caption{Figure2}
+\end{figure}
+\item From the given line $\myvec{0 & 1}\vec{x}=0$,we have
 \begin{align}
 a=0,b=1,c=0
 \end{align}
@@ -228,29 +245,15 @@ Direction vector
 \vec{m} = \myvec{1 \\ 0}
 \end{align}
 y-intercept = \myvec{0 \\ 0}
-%\end{multicols}
-
-PLOT OF GIVEN LINES -
+\\
+PLOT OF GIVEN LINE:
 \numberwithin{figure}{section}
 \begin{figure}[ht!]
-Plot of \eqref{eq1} -
-\centering
-\includegraphics[width=\columnwidth]{Fig1.png}
-\caption{Figure1}
-\end{figure} 
-\numberwithin{figure}{section}
-\begin{figure}[ht!]
-Plot of \eqref{eq2} -
-\centering
-\includegraphics[width=\columnwidth]{Fig2.png}
-\caption{Figure2}
-\end{figure} 
-\numberwithin{figure}{section}
-\begin{figure}[ht]
-Plot of \eqref{eq3} 
+Plot of \eqref{eq3} -
 \centering
 \includegraphics[width=\columnwidth]{Fig3.png}
 \caption{Figure3}
-\end{figure}    
+\end{figure}
+%\end{multicols}
 \end{enumerate}
 \end{document}
